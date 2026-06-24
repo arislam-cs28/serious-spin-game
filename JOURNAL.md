@@ -12,5 +12,5 @@ For the main menu, I:
 I also built the main framework of the options screen. It includes the main panel, and a toggle to turn music on and off.
 
 Quick photo:
-![06/23's Work for the Day](photos\0623.png)
+![06/23's Work for the Day](photos/0623.png)
 ---
