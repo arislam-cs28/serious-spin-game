@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://bbbxny0hvlv66"]
+
+[node name="Options" type="Control" unique_id=1788212888]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="." unique_id=1402367150]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Label" type="Label" parent="Panel" unique_id=1921449577]
+layout_mode = 0
+offset_right = 1328.0
+offset_bottom = 496.0
+text = "Game Preferences"
+
+[node name="CheckButton" type="CheckButton" parent="." unique_id=276768571]
+layout_mode = 0
+offset_left = 408.0
+offset_top = 464.0
+offset_right = 529.0
+offset_bottom = 508.0
+theme_override_font_sizes/font_size = 26
+text = "Music"

@@ -1,2 +1,8 @@
-# serious-spin-game
-The game I made that encompasses, well, seriousness. And spinning?
+# Serious Game That I Haven't Quite Titled Yet
+
+
+# Build Methods
+
+
+
+# Credits

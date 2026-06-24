@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://bcw3vufjyvj2w"]
+
+[node name="Main Menu" type="Control" unique_id=364925922]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="Panel" parent="." unique_id=1534441787]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Logo" type="Panel" parent="." unique_id=1171290261]
+layout_mode = 0
+offset_left = 88.0
+offset_top = 768.0
+offset_right = 744.0
+offset_bottom = 912.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1365064480]
+layout_mode = 0
+offset_left = 832.0
+offset_top = 728.0
+offset_right = 1344.0
+offset_bottom = 940.0
+
+[node name="Play" type="Button" parent="VBoxContainer" unique_id=179459321]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+text = "Play!"
+
+[node name="About" type="Button" parent="VBoxContainer" unique_id=1624631813]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "About!"
+
+[node name="Credits" type="Button" parent="VBoxContainer" unique_id=256849451]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "Credits!"
+
+[node name="Options" type="Button" parent="VBoxContainer" unique_id=981991199]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "Options!"
