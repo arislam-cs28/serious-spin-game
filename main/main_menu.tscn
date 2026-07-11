@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://bcw3vufjyvj2w"]
 
+[ext_resource type="Script" uid="uid://c0uqf7v00wmkt" path="res://main/main_menu.gd" id="1_4l7av"]
+
 [node name="Main Menu" type="Control" unique_id=364925922]
 layout_mode = 3
 anchors_preset = 15
@@ -7,6 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_4l7av")
 
 [node name="Background" type="Panel" parent="." unique_id=1534441787]
 layout_mode = 0
@@ -15,10 +18,17 @@ offset_bottom = 1080.0
 
 [node name="Logo" type="Panel" parent="." unique_id=1171290261]
 layout_mode = 0
-offset_left = 88.0
-offset_top = 768.0
-offset_right = 744.0
-offset_bottom = 912.0
+offset_left = 608.0
+offset_top = 312.0
+offset_right = 1264.0
+offset_bottom = 456.0
+
+[node name="Label" type="Label" parent="Logo" unique_id=1724229458]
+layout_mode = 0
+offset_right = 664.0
+offset_bottom = 152.0
+theme_override_font_sizes/font_size = 50
+text = "MAIN ACTUAL GAME TITLE"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1365064480]
 layout_mode = 0
@@ -27,10 +37,11 @@ offset_top = 728.0
 offset_right = 1344.0
 offset_bottom = 940.0
 
-[node name="Play" type="Button" parent="VBoxContainer" unique_id=179459321]
+[node name="New Game" type="Button" parent="VBoxContainer" unique_id=179459321]
 custom_minimum_size = Vector2(100, 50)
 layout_mode = 2
-text = "Play!"
+text = "New Game
+"
 
 [node name="About" type="Button" parent="VBoxContainer" unique_id=1624631813]
 custom_minimum_size = Vector2(0, 50)
@@ -46,3 +57,7 @@ text = "Credits!"
 custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 text = "Options!"
+
+[connection signal="pressed" from="VBoxContainer/About" to="." method="_on_about_pressed"]
+[connection signal="pressed" from="VBoxContainer/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="VBoxContainer/Options" to="." method="_on_options_pressed"]

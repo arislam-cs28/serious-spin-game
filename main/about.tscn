@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://utm7hdjmdl5c"]
+
+[ext_resource type="Script" uid="uid://c5olkhy26elp2" path="res://main/about.gd" id="1_bribd"]
+
+[node name="About" type="Control" unique_id=720430970]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bribd")
+
+[node name="Panel" type="Panel" parent="." unique_id=1421035380]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Button" type="Button" parent="." unique_id=108423446]
+layout_mode = 0
+offset_left = 928.0
+offset_top = 784.0
+offset_right = 1066.0
+offset_bottom = 861.0
+theme_override_font_sizes/font_size = 50
+text = "BACK"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

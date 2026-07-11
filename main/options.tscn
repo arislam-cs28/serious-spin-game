@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://bbbxny0hvlv66"]
 
+[ext_resource type="Script" uid="uid://bdeqtpve7kvi2" path="res://main/options.gd" id="1_8wyjq"]
+
 [node name="Options" type="Control" unique_id=1788212888]
 layout_mode = 3
 anchors_preset = 15
@@ -7,6 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_8wyjq")
 
 [node name="Panel" type="Panel" parent="." unique_id=1402367150]
 layout_mode = 0
@@ -27,3 +30,14 @@ offset_right = 529.0
 offset_bottom = 508.0
 theme_override_font_sizes/font_size = 26
 text = "Music"
+
+[node name="Return to Home" type="Button" parent="." unique_id=272757759]
+layout_mode = 0
+offset_left = 536.0
+offset_top = 408.0
+offset_right = 1252.0
+offset_bottom = 592.0
+theme_override_font_sizes/font_size = 61
+text = "RETURN TO GOME PAGE"
+
+[connection signal="pressed" from="Return to Home" to="." method="_on_return_to_home_pressed"]
